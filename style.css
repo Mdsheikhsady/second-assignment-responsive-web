@@ -1,121 +1,378 @@
-/* google font Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); 
 
-*{
+* {
     font-family: Inter;
+
+}
+body{
     background-color: var(--web-bg-color);
 }
-/* common css */
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
 }
-p{
+
+p {
     color: var(--paragrap-color);
     font-size: 1.4rem;
 }
-:root{
-    --primary-color:#E95A08;
-    --footer-nav-color:#6B7280;
-    --paragrap-color:#00000050;
-    --flower-name-color:#111111;
-    --footer-bg:#FAFCFF;
-    --web-bg-color:#F5F8FF;
+
+:root {
+    --primary-color: #E95A08;
+    --footer-nav-color: #6B7280;
+    --paragrap-color: #00000060;
+    --flower-name-color: #111111;
+    --footer-bg: #FAFCFF;
+    --web-bg-color: #F5F8FF;
 }
-img{
+
+img {
     max-width: 100%;
 }
-/* nav css */
-header{}
-nav{
+/* header css */
+header {
+}
+
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     align-items: center;
 }
-.nav-items ul{
+
+.nav-items ul {
     display: flex;
     gap: 2rem;
 }
-.nav-items ul li{
+
+.nav-items ul li {
     list-style: none;
 }
 
-.nav-items ul li a{
+.nav-items ul li a {
     text-decoration: none;
     color: var(--paragrap-color);
 }
-.cart{}
 
-/* banner css */
-.hero-banner{
+.cart {
+}
+
+.hero-banner {
     display: flex;
     align-items: end;
     margin-top: 6rem;
     justify-content: space-between;
 }
-.banner-left{
+
+.banner-left {
     align-items: flex-end;
     max-width: 505px;
 }
-.banner-left h1{
+
+.banner-left h1 {
     font-size: 4rem;
     margin-bottom: 0.5rem;
 }
-.banner-left h1 span{color: var(--primary-color);}
-.banner-left p{}
-.banner-right{}
-.banner-right img{
+
+.banner-left h1 span {
+    color: var(--primary-color);
 }
-/* plant section css */
-.plant-section{
+
+.banner-left p {
+}
+
+.banner-right {
+}
+
+.banner-right img {
+}
+
+/*********** header responsive css ***********/
+
+
+/* plant-section css */
+.plant-section {
     text-align: center;
+    margin-top: 4rem;
 }
-.plant-section h2{
+
+.plant-section h2 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.plant-section p{
+
+.plant-section p {
     max-width: 780px;
     margin: auto;
 }
-.all-flowers{
+
+.all-flowers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    row-gap: 2rem;
+    gap: 2rem 1rem;
     margin-top: 3rem;
 }
-.plant-card{}
-.plant-card img{}
-.plant-cardh4{
+
+.plant-card {
+}
+
+.plant-card img {
+}
+
+.plant-card h4 {
     font-size: 1.5rem;
 }
-.plant-card h3{
+
+.plant-card h3 {
     font-size: 2rem;
     font-weight: 600;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.5rem 0px 1.5rem;
     color: var(--flower-name-color);
 }
-.plant-card h4{
-    
-font-size: 1.3rem;
-font-weight: 500;
-    
-color: var(--flower-name-color);
-    
-margin: 1.5rem 0 0.5rem 0;
+
+.plant-card h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--flower-name-color);
+    margin: 1.5rem 0px 0.5rem;
 }
-.btn-primary{
+
+.btn-primary {
     width: 100%;
     background-color: var(--primary-color);
-    padding: 1rem 0;
+    padding: 1rem 0px;
     border: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
+    cursor: pointer;
+}
+
+.plant-lover-section {
+    margin-top: 12rem;
+    position: relative;
+}
+
+.plant-lover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+
+.plant-lover-lef {
+}
+
+.trust-badge {
+    max-width: 280px;
+    max-height: 280px;
+    position: absolute;
+    background: transparent;
+    top: -134px;
+    left: 364px;
+}
+
+.plant-lover-right {
+}
+
+.plant-lover-right h3 {
+    font-size: 3.5rem;
+    margin: 1rem 0px 0.5rem;
+}
+
+.plant-lover-right ul {
+}
+
+.plant-lover-right li {
+    color: var(--paragrap-color);
+    font-size: 1.5rem;
+}
+
+.plant-lover-right p {
+}
+
+.latest-deals-section {
+    margin-top: 10rem;
+}
+
+.latest-deals-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.latest-deals-p {
+    text-align: center;
+    margin: auto 155px 100px;
+}
+
+.plant-type {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr);
+    column-gap: 2.5rem;
+}
+
+.btn-secondary {
+    border-width: 0px 0px 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    background: transparent;
+    border-top-style: initial;
+    border-top-color: initial;
+    border-left-style: initial;
+    border-left-color: initial;
+    border-right-style: initial;
+    border-right-color: initial;
+}
+
+.plant-type-left {
+    display: grid;
+    gap: 1rem;
+}
+
+.plant-type-left-top {
+    max-width: 100%;
+    height: 220px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/deal-bloom.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.plant-type-left-top h3 {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.plant-type-left-bottom {
+    max-width: 100%;
+    height: 220px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/deal-ana.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.plant-type-left-bottom h3 {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.plant-type-right {
+    max-width: 100%;
+    height: 460px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/deal-zabo.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.plant-type-right h3 {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.plant-type-right .btn-secondary {
+    font-size: 2rem;
+}
+
+.plant-type .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe-section {
+    margin-top: 7rem;
+    margin-left: -7px;
+    margin-right: -7px;
+    padding-right: 7px;
+    max-width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/news-letter-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-title {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.subcribe {
+    background: transparent;
+}
+
+.subscribe-section input {
+    padding: 0.95rem 320px 0.95rem 0.95rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border: none;
+    margin-right: -5px;
+}
+
+.subscribe-section .btn-primary {
+    width: 200px;
+}
+
+.subscribe-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+/* footer css */
+footer{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr 1fr 1fr);
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+.footer-content{
+
+}
+.footer-content p{
+    padding-right: 35px;
+}
+.footer-content img{}
+.footer-nav{}
+
+footer .footer-nav ul{
+}
+footer .footer-nav li{
+    list-style: none;
+    padding: 20px 0;
+}
+footer .footer-nav a{
+    text-decoration: none;
+    color: var(--paragrap-color);
+}
+.social-icon{
+    margin-top: 35px;
+}
+.social-icon img{
+    margin: 0px 7px;
+    text-align: right;
+    width: 30px;
+    cursor: pointer;
 }
