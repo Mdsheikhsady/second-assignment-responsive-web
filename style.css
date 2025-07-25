@@ -4,6 +4,9 @@
     font-family: Inter;
 
 }
+.hide{
+    display:none;
+}
 body{
     background-color: var(--web-bg-color);
 }
@@ -93,7 +96,25 @@ nav {
 }
 
 /*********** header responsive css ***********/
-
+@media screen and (max-width:576px) {
+        .container{
+                max-width: 530px;
+                margin: auto;
+            }
+        p{
+            font-size:1rem ;
+            }
+        .nav-items ul{
+            display: none;
+        }
+        .banner-left h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        }
+        .hero-banner {
+            flex-direction: column-reverse;
+    }
+}
 
 /* plant-section css */
 .plant-section {
@@ -151,7 +172,30 @@ nav {
     font-size: 1rem;
     cursor: pointer;
 }
+/************** plant section responsive ******************/
+@media screen and (max-width:576px){
+    .all-flowers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 1rem;
+}
+.plant-section p {
+    max-width: 400px;
+    margin: auto;
+}
+.plant-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.plant-card h3 {
+    font-size: 1.5rem;
+}
 
+.plant-card h4 {
+    font-size: 1.1rem;
+}
+}
+
+/* plant lover section css */
 .plant-lover-section {
     margin-top: 12rem;
     position: relative;
@@ -163,7 +207,7 @@ nav {
     column-gap: 4rem;
 }
 
-.plant-lover-lef {
+.plant-lover-left {
 }
 
 .trust-badge {
@@ -194,6 +238,7 @@ nav {
 .plant-lover-right p {
 }
 
+/* latest-deals-section css */
 .latest-deals-section {
     margin-top: 10rem;
 }
@@ -208,7 +253,25 @@ nav {
     text-align: center;
     margin: auto 155px 100px;
 }
+/*********************** plant-lover-section responsive css *************************/
+     @media screen and (max-width:576px) {
+   .plant-lover {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 4rem;
 
+}
+.trust-badge {
+  display: none;
+}
+.plant-lover-right h3 {
+    font-size: 2rem;;
+}
+.plant-lover-section {
+    margin-top: 4rem;
+}
+}
+/* latest deals section css */
 .plant-type {
     display: grid;
     grid-template-columns: repeat(1, 1fr 2fr);
@@ -294,6 +357,35 @@ nav {
     align-items: center;
     flex-direction: column;
 }
+/******************* latest deals section responsive css ******************/
+@media screen and (max-width:576px) {
+    .plant-type {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+}
+.plant-type-right {
+    height: 220px;
+}
+
+.plant-type-right h3 {
+    font-size: 1.5rem;
+}
+.plant-type-right .btn-secondary {
+    font-size: 1.3rem;
+}
+.latest-deals-title {
+    font-size: 2rem;
+}
+
+.latest-deals-p {
+    margin: auto 80px 35px;
+}
+.plant-type-left {
+    gap: 1.5rem;
+}
+
+}
+/* subscribe-section css */
 
 .subscribe-section {
     margin-top: 7rem;
@@ -340,8 +432,33 @@ nav {
     flex-direction: column;
     background-color: transparent;
 }
+/************ subscribe-section responsive css *******************/
+@media screen and (max-width:576px) {
+    .subscribe-section {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: 300px;
+}
+
+.subscribe-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.subscribe-section input {
+    padding: 0.95rem 80px 0.95rem 0.95rem;
+    font-size: 1rem;
+}
+
+.subscribe-section .btn-primary {
+    width: 150px;
+}
+}
+
 /* footer css */
 footer{
+    background-color: var(--footer-bg);
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr 1fr 1fr);
     justify-content: space-between;
@@ -375,4 +492,34 @@ footer .footer-nav a{
     text-align: right;
     width: 30px;
     cursor: pointer;
+}
+
+/* footer responsive css*/
+
+@media screen and (max-width:576px) {
+    
+footer{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.footer-content p{
+    padding-right: 200px;
+}
+
+footer .footer-nav{
+    margin-bottom: -2rem;
+}
+footer .footer-nav li{
+    padding: 20px 0;
+}
+
+.social-icon{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.social-icon img{
+    width: 40px;
+}
 }
