@@ -1,0 +1,74 @@
+/* google font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: Inter;
+    background-color: var(--web-bg-color);
+}
+/* common css */
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+p{
+    color: var(--paragrap-color);
+    font-size: 1.2rem;
+}
+:root{
+    --primary-color:#E95A08;
+    --footer-nav-color:#6B7280;
+    --paragrap-color:#00000050;
+    --flower-name-color:#111111;
+    --footer-bg:#FAFCFF;
+    --web-bg-color:#F5F8FF;
+}
+/* nav css */
+header{}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: center;
+}
+.nav-items ul{
+    display: flex;
+    gap: 25px;
+}
+.nav-items ul li{
+    list-style: none;
+}
+.nav-items ul:first-child{
+    color: var(--flower-name-color)
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: var(--paragrap-color);
+}
+.cart{}
+
+/* banner css */
+.hero-banner{
+    display: flex;
+    align-items: end;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.banner-left{
+    align-items: flex-end;
+    max-width: 505px;
+}
+.banner-left h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.banner-left h1 span{color: var(--primary-color);}
+.banner-left p{}
+.banner-right{}
+.banner-right img{
+    max-width: 100%;
+}
